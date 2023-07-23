@@ -1,7 +1,7 @@
 import React from 'react'
-import { Pokemon, PokemonDetails } from '../interface';
+import { PokemonDetails } from '../interface';
 import PokemonList from './PokemonList';
-import "./pokemon.css"
+import "./pokemon.css";
 import { Detail } from '../App';
 
 interface Props{

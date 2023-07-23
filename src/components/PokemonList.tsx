@@ -16,9 +16,9 @@ interface Props{
 
 const PokemonList:React.FC<Props> = (props) => {
     const {name,id,image,abilities,viewDetail,setDetail} = props;
-    const [isSelected,setSelected] =useState(false);
+    const [isSelected,setSelected] = useState(false);
     useEffect(() =>{
-        setSelected(id === viewDetail?.id);
+        setSelected(id === viewDetail.id);
     },[viewDetail]);
     const closeDetail = () => {
         setDetail({
